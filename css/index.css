@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Roboto+Condensed&display=swap');
+
+body{
+  font-family: 'Mukta', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.section{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.section h2.section-head{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section h2.section-head::after{
+  background: #c74c3c;
+  content: "";
+  display: block;
+  width: 150px;
+  height: 3px;
+  margin: 20px auto;
+}
+
+  .section-content h2.section-head{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .section-content h2.section-head::after{
+    background: #c74c3c;
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin: 20px auto;
+  }
+
+  .service-box  p{
+      text-align: center;
+    }
+  .service-box h3{
+      text-align: center;
+    }
+
+  .service-box i{
+    color: #c74c3c;
+    font-size: 50px;
+    margin-bottom: 15px;
+    margin-left: 135px;
+  }
