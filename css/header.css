@@ -1,101 +1,32 @@
-body,html {
-  margin: 0;
-  scroll-behavior: smooth;
-}
-.dropdown{
-    position: relative;
-    top : 20px;
-    left: 20px;
-}
-.dropdown button{
-background-color: #5B8485;
-
+@charset "UTF-8";
+:root {
+  --heading-color:#242463 ; /*For Headings*/
+  --background-color: #faaf40; /*For backgrounds*/
+  --text-color: #ee4036; /*For texts*/
+  --extra-color:#69678b ; /*Extra*/
+  --white: #FFFFFF; 
 }
 
-.dropdown-menu a:hover {
-background-color: #E15D3B;
-
+.nav-item a{
+    color: var(--text-color) !important;
+}
+.nav-item a:hover{
+    color: var(--background-color) !important;
+}
+.active a{
+    color: var(--extra-color) !important;
 }
 
-
-.sample-header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background-image: url("../imgs/background.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.sample-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: MidnightBlue;
-  opacity: 0.3;
-}
-.sample-header-section {
-  position: relative;
-  padding: 15% 0 10%;
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-  font-family: "Montserrat", sans-serif;
-}
-h1 {
-  font-weight: 500;
-}
-h2 {
-  font-weight: 400;
+.user a {
+    color: var(--text-color);
 }
 
-.sample-section-wrap {
-  position: relative;
-  align-content: center;
-  background-color: white;
+.user a:hover {
+    text-decoration: none;
+    color: var(--background-color);
 }
-
-.sample-section {
-  position: relative;
-  padding: 40px;
-}
-ul {
-  list-style-type: none;
-}
-
 
 
 footer{
-  background-color: #BBCAA4;
-  color: #FFFFFF;
-}
-.contet{
-  text-align: left;
-  margin-bottom: 40px;
-}
-.content::after{
-  background: #FFFFFF;
-  content: "";
-  display: block;
-  width: 150px;
-  height: 3px;
-  margin-top: 10px;
-  margin-left: 5px;
-}
-
-.links-footer a{
-  text-decoration: none;
-  color: #5B8485;
-}
-
-.links-footer a:hover{
-  text-decoration: none;
-  color: #5B8485;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    background-color: var(--heading-color);
 }

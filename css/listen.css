@@ -1,0 +1,52 @@
+:root{
+    --heading-color:#242463 ; /*For Headings*/
+    --background-color: #faaf40; /*For backgrounds*/
+    --text-color: #ee4036; /*For texts*/
+    --extra-color:#69678b ; /*Extra*/
+    --white: #FFFFFF; 
+   }
+  
+   .btn {
+    color: var(--text-color);
+    border-color: var(--background-color) !important;
+  }
+  
+  .btn:hover {
+    color: var(--text-color);
+  background-color: var(--background-color);
+  }
+  
+   .fa-star{
+    color: var(--heading-color);
+   }
+  
+   audio{
+    width: 100%;
+   }
+   hr.style { 
+    height: 30px; 
+    border-style: solid; 
+    border-color: #8c8b8b; 
+    border-width: 1px 0 0 0; 
+    border-radius: 20px; 
+  } 
+  hr.style:before { 
+    display: block; 
+    content: ""; 
+    height: 30px; 
+    margin-top: -31px; 
+    border-style: solid; 
+    border-color: #8c8b8b; 
+    border-width: 0 0 1px 0; 
+    border-radius: 20px; 
+  }
+  
+  .card-comment, textarea{
+    margin-top: auto;
+    border: 0.5px solid var(--heading-color) !important;
+  }
+  
+  
+  
+  
+  

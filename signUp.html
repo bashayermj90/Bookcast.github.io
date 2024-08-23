@@ -1,141 +1,170 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-     <meta charset="utf-8">
-    <title>Book List</title>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/register.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/e02fd1a558.js" crossorigin="anonymous"></script>
-    
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/registration.css">
+  <!--Google Font CDN-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&family=Mukta:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!--Bootstap and Fontawesome CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
-    <body>
-    <div class="sample-header">
-      <div class="dropdown">
-        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Rigster
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="signUp.html">Sign Up</a>
-          <a class="dropdown-item" href="signIn.html">Sign In </a>
-        </div>
-      </div>
-      <div class="sample-header-section text-center">
-        <h1>Bookcast</h1>
-        <h2>Start the audioable journey.</h2>
-        <ul class = "btn-group">
-          <li><a href="main.html" class="btn btn-light mx-2">Listen Now </a></li>
-          <li><a href="index.html" class="btn btn-light mx-2">Home</a></li>
-        </ul>
-      </div>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">
+      <h1>Bookcast</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars-staggered"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Books.html">Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact-us.html">Contact</a>
+        </li>
+      </ul>
+      <div class="user">
+        <a href="SignIn.html">
+            sign In &nbsp;
+            <i class="fa-solid fa-user"></i>
+        </a>
     </div>
-    <div class="sample-section-wrap" id="one">
-      <div class="sample-section">
-        <div class="container">
-                
-        <!-- Sign up form -->
-        <section class="signup">
-            <div class="container">
-                <div class="signup-content">
-                    <div class="signup-form">
-                        <h2 class="form-title">Sign up</h2>
-                        <form method="POST" class="register-form" id="register-form">
-                            <div class="form-group">
-                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="Your Name"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="Your Email"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="pass" id="pass" placeholder="Password"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" id="agree" name="agree" value="Agreed">
-                                <label for="agree-term" class="label-agree-term">I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
-                            </div>
-                            <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="signup-image">
-                        <figure><img src="imgs/signup-image.jpg" alt="sing up image"></figure>
-                        <a href="signIn.html" class="signup-image-link">I am already member</a>
-                    </div>
+    </div>
+  </nav>
+
+  <section class="p-3 p-md-4 p-xl-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6 col-xxl-5">
+          <div class="card">
+            <div class="card-body p-3 p-md-4 p-xl-5">
+              <div class="row">
+                <div class="col-12">
+                  <div class="mb-5">
+                    <h2 class="h4 text-center">Registration</h2>
+                    <h3 class="fs-6 fw-normal text-secondary text-center m-0">Enter your details to register</h3>
+                  </div>
                 </div>
-            </div>
-        </section>
-        </div>
-    </div>
-  </div>
-
-<footer>
-    <div class="about">
-      <div class="container section">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="links">
-              <div class="links-footer">
-                <h2 class="content">Links</h2>
-                <a href="#"> About Us </a><br>
-                <a href="#"> Terms of Use</a><br>
-                <a href="#"> Privacy</a><br>
               </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="links">
-              <h2 class="content">Links</h2>
-              <div class="links-footer">
-                <a href="#"> FAQs </a><br>
-                <a href="#"> Blog</a><br>
-                <a href="#"> Contact Us</a><br>
+              <form action="#!">
+                <div class="row gy-3 overflow-hidden">
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" name="username" id="username" placeholder="Username"
+                        required>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" name="password" id="password" value=""
+                        placeholder="Password" required>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" name="ConfirmPassword" id="ConfirmPassword" value=""
+                        placeholder="Confirm Password" required>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" name="iAgree" id="iAgree" required>
+                      <label class="form-check-label text-secondary" for="iAgree">
+                        I agree to the <a href="#!" class="text-decoration-none">terms and conditions</a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-grid">
+                      <button class="btn mt-3 sign" type="submit">Sign up</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="row">
+                <div class="col-12">
+                  <hr class="mt-5 mb-4 border-secondary-subtle">
+                  <p class="m-0 text-secondary text-center">Already have an account? <a href="SignIn.html"
+                      class="link text-decoration-none">Sign in</a></p>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="address">
-              <h2 class="content">About Company</h2>
-              <p>Yahoo Baba, Inc.
-              455 Hill Road, Ambala Cantt accesskey="HARAYNA, INDIA 1330011
-              p:(123)456-7890"</p>
+              <div class="row">
+                <div class="col-12">
+                  <p class="mt-5 mb-5">or Regist with</p>
+                  <div class="d-flex justify-content-center">
+                    <a href="#!" class="btn ">
+                      <i class="fa-brands fa-google" style="color: red;"></i>
+                    </a>
+                    <a href="#!" class="btn ">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#!" class="btn">
+                      <i class="fa-brands fa-x" style="color: black;"></i>
+                    </a>
+                    <a href="#!" class="btn">
+                      <i class="fa-brands fa-apple" style="color: gray;"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </footer>
-</div>
+  </section>
 
-  </body>
+  
 
 
-  <script type="text/javascript">
-  function parallax_height() {
-  var scroll_top = $(this).scrollTop();
-  var sample_section_top = $(".sample-section").offset().top;
-  var header_height = $(".sample-header-section").outerHeight();
-  $(".sample-section").css({ "margin-top": header_height });
-  $(".sample-header").css({ height: header_height - scroll_top });
-}
-parallax_height();
-$(window).scroll(function() {
-  parallax_height();
-});
-$(window).resize(function() {
-  parallax_height();
-});
 
-  </script>
+  <section class="">
+    <!-- Footer -->
+    <footer class="text-white">
+      <div class="text-center p-3" id="copyright">
+        © 2022 Copyright:
+        <a class="text-white" href="index.html">Bookcast.com</a>
+      </div>
+    </footer>
+  </section>
+
+</body>
 </html>
