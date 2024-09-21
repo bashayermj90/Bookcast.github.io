@@ -62,13 +62,6 @@
     color: var(--text-color);
   }
   
-  .card-img-top {
-    height: 100%;
-    max-height: 350px; /* Set max-height as needed */
-    object-fit: cover;
-    overflow: hidden;
-  }
-  
   .card-body {
     height: 250px; /* Set height as needed */
   }
