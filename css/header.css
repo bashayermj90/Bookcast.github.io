@@ -9,6 +9,7 @@
 
 .nav-item a{
     color: var(--text-color) !important;
+    transition: var(--text-color) 0.3s ease;
 }
 .nav-item a:hover{
     color: var(--background-color) !important;
@@ -19,6 +20,7 @@
 
 .user a {
     color: var(--text-color);
+    transition: var(--text-color) 0.3s ease;
 }
 
 .user a:hover {

@@ -1,52 +1,67 @@
-:root{
-    --heading-color:#242463 ; /*For Headings*/
-    --background-color: #faaf40; /*For backgrounds*/
-    --text-color: #ee4036; /*For texts*/
-    --extra-color:#69678b ; /*Extra*/
-    --white: #FFFFFF; 
-   }
-  
-   .btn {
-    color: var(--text-color);
-    border-color: var(--background-color) !important;
-  }
-  
-  .btn:hover {
-    color: var(--text-color);
+:root {
+  --heading-color: #242463;
+  /*For Headings*/
+  --background-color: #faaf40;
+  /*For backgrounds*/
+  --text-color: #ee4036;
+  /*For texts*/
+  --extra-color: #69678b;
+  /*Extra*/
+  --white: #FFFFFF;
+}
+
+
+.card {
+  border: 1px solid var(--background-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.audio {
+  margin-top: 20px;
+}
+
+.comments-section {
+  margin-top: 30px;
+}
+
+.card-comment {
+  margin-bottom: 15px;
+}
+
+.btn {
   background-color: var(--background-color);
-  }
-  
-   .fa-star{
-    color: var(--heading-color);
-   }
-  
-   audio{
-    width: 100%;
-   }
-   hr.style { 
-    height: 30px; 
-    border-style: solid; 
-    border-color: #8c8b8b; 
-    border-width: 1px 0 0 0; 
-    border-radius: 20px; 
-  } 
-  hr.style:before { 
-    display: block; 
-    content: ""; 
-    height: 30px; 
-    margin-top: -31px; 
-    border-style: solid; 
-    border-color: #8c8b8b; 
-    border-width: 0 0 1px 0; 
-    border-radius: 20px; 
-  }
-  
-  .card-comment, textarea{
-    margin-top: auto;
-    border: 0.5px solid var(--heading-color) !important;
-  }
-  
-  
-  
-  
-  
+  color: var(--white);
+}
+
+.btn:hover {
+  background-color: var(--extra-color);
+}
+
+
+.fa-star {
+  color: var(--heading-color);
+}
+
+audio {
+  width: 100%;
+}
+
+
+hr.style {
+  border: 0;
+  height: 1px;
+  background: #000;
+  /* Black color */
+  width: 50%;
+  /* Adjust width as needed */
+  margin: 20px auto;
+  /* Center the line */
+}
+
+
+.card-comment,
+textarea {
+  margin-top: auto;
+  border: 0.5px solid var(--heading-color) !important;
+}

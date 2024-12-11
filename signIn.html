@@ -3,7 +3,10 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sign Up</title>
+  <meta name="description" content="Sign in to access your Bookcast account and explore audiobooks.">
+  <meta name="keywords" content="Bookcast, sign in, audiobooks, user account">
+
+  <title>Sign In</title>
   <!--Google Font CDN-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +29,7 @@
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    
+
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/registration.css">
 </head>
@@ -84,8 +87,8 @@
                 <div class="row gy-3 overflow-hidden">
                   <div class="col-12">
                     <div class="form-floating mb-3">
-                      <input type="text" class="form-control" name="username" id="username" placeholder="Username or Email"
-                        required>
+                      <input type="text" class="form-control" name="username" id="username"
+                        placeholder="Username or Email" required>
                     </div>
                   </div>
                   <div class="col-12">
@@ -96,7 +99,7 @@
                   </div>
                   <div class="col-12">
                     <div class="d-grid">
-                      <button class="btn sign" type="submit">Sign In</button>
+                      <button id="submit-btn" class="btn" type="submit" aria-label="Sign In">Sign In</button>
                     </div>
                   </div>
                 </div>
@@ -104,13 +107,18 @@
               <div class="row">
                 <div class="col-12">
                   <hr class="mt-5 mb-4 border-secondary-subtle">
+                  <p class="m-0 text-center">
+                    <a href="forgot-password.html" class="link text-decoration-none">Forgot your password?</a>
+                  </p>
+
                   <p class="m-0 text-center">Don't have an account? <a href="signUp.html"
-                      class="link text-decoration-none">Sign Up</a></p>
+                      class="link text-decoration-none">Sign Up</a>
+                  </p>
                 </div>
               </div>
               <div class="row">
                 <div class="col-12">
-                  <p class="mt-5 mb-5">Or continue with</p>
+                  <p class="mt-5 mb-5 text-center">Or continue with</p>
                   <div class="d-flex justify-content-center">
                     <a href="#!" class="btn mx-3">
                       <i class="fa-brands fa-google" style="color: red;"></i>
@@ -137,11 +145,18 @@
   <section class="">
     <!-- Footer -->
     <footer class="text-white">
+      <!-- Grid container -->
+
       <div class="text-center p-3" id="copyright">
-        © 2022 Copyright:
+        © <span id="copyright-year"></span> Copyright:
         <a class="text-white" href="index.html">Bookcast.com</a>
       </div>
     </footer>
   </section>
+
+  <script>
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
 </body>
+
 </html>
