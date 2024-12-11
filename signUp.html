@@ -3,6 +3,9 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Create your Bookcast account to explore a wide range of audiobooks.">
+  <meta name="keywords" content="Bookcast, sign up, audiobooks, user registration">
+
   <title>Sign Up</title>
   <!--Google Font CDN-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +29,7 @@
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    
+
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/registration.css">
 </head>
@@ -59,10 +62,10 @@
       </ul>
       <div class="user">
         <a href="SignIn.html">
-            sign In &nbsp;
-            <i class="fa-solid fa-user"></i>
+          sign In &nbsp;
+          <i class="fa-solid fa-user"></i>
         </a>
-    </div>
+      </div>
     </div>
   </nav>
 
@@ -115,7 +118,7 @@
                   </div>
                   <div class="col-12">
                     <div class="d-grid">
-                      <button class="btn mt-3 sign" type="submit">Sign up</button>
+                      <button id="submit-btn" class="btn mt-3" type="submit" aria-label="Create Account">Sign up</button>
                     </div>
                   </div>
                 </div>
@@ -153,19 +156,38 @@
     </div>
   </section>
 
-  
 
 
 
   <section class="">
     <!-- Footer -->
     <footer class="text-white">
+      <!-- Grid container -->
+
       <div class="text-center p-3" id="copyright">
-        © 2022 Copyright:
+        © <span id="copyright-year"></span> Copyright:
         <a class="text-white" href="index.html">Bookcast.com</a>
       </div>
     </footer>
   </section>
+  <!-- JavaScript for client-side validation -->
+  <script>
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
 
+    document.querySelector('form').addEventListener('submit', function (event) {
+      const password = document.getElementById('password').value;
+      const username = document.getElementById('username').value;
+      if (password.length < 8) {
+        alert('Password must be at least 8 characters long.');
+        event.preventDefault(); // Prevent form submission
+      }
+      if (!username) {
+        alert('Username cannot be empty.');
+        event.preventDefault();
+      }
+    });
+
+  </script>
 </body>
+
 </html>

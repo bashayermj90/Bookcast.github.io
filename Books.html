@@ -2,7 +2,10 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore our extensive collection of audiobooks including [Book Title], [Book Title], and more.">
+  <meta name="keywords" content="books, audiobooks, Bookcast">
+
   <title>Bookcast</title>
   <!--Google Font CDN-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,9 +27,9 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    
+
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/books.css">
 </head>
@@ -76,7 +79,7 @@
       </div>
     </div>
     <div class="row d-flex justify-content-start">
-      <select class="form-select mx-4 w-25 rounded" aria-label="Default select example">
+      <select class="form-select mx-4 w-25 rounded dropdown" aria-label="Default select example">
         <option selected>Genres</option>
         <option value="1">All Genres</option>
         <option value="2">Art & Photography</option>
@@ -89,7 +92,7 @@
         <option value="3">Sci-Fi & Fantasy</option>
         <option value="3">Teen & Young Adult</option>
       </select>
-      <select name="" class="form-select px-2 w-25 rounded">
+      <select name="" class="form-select px-2 w-25 rounded dropdown">
         <option selected>Sorted By</option>
         <option value="1">Recomended</option>
         <option value="2">Newets Books</option>
@@ -100,101 +103,37 @@
 
     <div class="container">
       <div class="row justify-content-center my-3">
-        <div class="col-lg-3 col-md-4 col-ms-6 mb-3">
-          <div class="card">
-            <img class="card-img-top" src="Assets/book1.jpeg" style="height: 50%" alt="book-cover">
-            <div class="card-body text-center">
-              <h3 class="card-title">Book name </h3>
-              <p class="card-text text-muted small">Auther name</p>
-              <div class="rate">4.5/5</div>
-              <a href="listen.html" class="btn btn-block mt-2"> Listen </a>
-              <a href="" class="btn btn-block"> Add to Favorite </a>
-            </div>
-          </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <article class="book">
+            <img src="Assets/book1.jpeg" alt="Book cover for [Book Title]" loading="lazy">
+            <h2>[Book Title]</h2>
+            <p>[Book Description]</p>
+            <a href="Listen.html" class="btn">Read More</a>
+          </article>
         </div>
-        <div class="col-lg-3 col-md-4 col-ms-6 mb-3">
-          <div class="card">
-            <img class="card-img-top" src="Assets/book1.jpg" style="height: 50%" alt="book-cover">
-            <div class="card-body text-center">
-              <h3 class="card-title">Book name </h3>
-              <p class="card-text text-muted small">Auther name </p>
-              <div class="rate">7.5/10</div>
-              <a href="listen.html" class="btn btn-block"> Listen </a>
-              <a href="" class="btn btn-block"> Add to Favorite </a>
-            </div>
-          </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <article class="book">
+            <img src="Assets/book1.jpeg" alt="Book cover for [Book Title]" loading="lazy">
+            <h2>[Book Title]</h2>
+            <p>[Book Description]</p>
+            <a href="Listen.html" class="btn">Read More</a>
+          </article>
         </div>
-        <div class="col-lg-3 col-md-4 col-ms-6 mb-3">
-          <div class="card">
-            <img class="card-img-top" src="Assets/book2.jpeg" style="height: 50%" alt="book-cover">
-            <div class="card-body text-center">
-              <h3 class="card-title">Book name </h3>
-              <p class="card-text text-muted small">Auther name</p>
-              <div class="rate">7.5/10</div>
-              <a href="listen.html" class="btn btn-block"> Listen </a>
-              <a href="" class="btn btn-block"> Add to Favorite </a>
-            </div>
-          </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <article class="book">
+            <img src="Assets/book1.jpeg" alt="Book cover for [Book Title]" loading="lazy">
+            <h2>[Book Title]</h2>
+            <p>[Book Description]</p>
+            <a href="Listen.html" class="btn">Read More</a>
+          </article>
         </div>
-        <div class="col-lg-3 col-md-4 col-ms-6 mb-3">
-          <div class="card">
-            <img class="card-img-top" src="Assets/book3.webp" style="height: 50%" alt="book-cover"  >
-            <div class="card-body text-center">
-              <h3 class="card-title">Book name </h3>
-              <p class="card-text text-muted small">Auther name </p>
-              <div class="rate">4.5/5</div>
-              <a href="listen.html" class="btn   btn-block mt-2"> Listen </a>
-              <a href="" class="btn btn-block"> Add to Favorite </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-ms-6 mb-3">
-          <div class="card">
-            <img class="card-img-top" src="Assets/book1.jpeg" style="height: 50%" alt="book-cover"  >
-            <div class="card-body text-center">
-              <h3 class="card-title">Book name </h3>
-              <p class="card-text text-muted small">Auther name </p>
-              <div class="rate">4.5/5</div>
-              <a href="listen.html" class="btn   btn-block mt-2"> Listen </a>
-              <a href="" class="btn btn-block"> Add to Favorite </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-ms-6 mb-3">
-          <div class="card">
-            <img class="card-img-top" src="Assets/book2.jpeg" style="height: 50%" alt="book-cover"  >
-            <div class="card-body text-center">
-              <h3 class="card-title">Book name </h3>
-              <p class="card-text text-muted small">Auther name </p>
-              <div class="rate">4.5/5</div>
-              <a href="listen.html" class="btn   btn-block mt-2"> Listen </a>
-              <a href="" class="btn btn-block"> Add to Favorite </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-ms-6 mb-3">
-          <div class="card">
-            <img class="card-img-top" src="Assets/book3.webp" style="height: 50%" alt="book-cover"  >
-            <div class="card-body text-center">
-              <h3 class="card-title">Book name </h3>
-              <p class="card-text text-muted small">Auther name </p>
-              <div class="rate">4.5/5</div>
-              <a href="listen.html" class="btn   btn-block mt-2"> Listen </a>
-              <a href="" class="btn btn-block"> Add to Favorite </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-ms-6 mb-3">
-          <div class="card">
-            <img class="card-img-top" src="Assets/book1.jpeg" style="height: 50%" alt="book-cover">
-            <div class="card-body text-center">
-              <h3 class="card-title">Book name </h3>
-              <p class="card-text text-muted small">Auther name </p>
-              <div class="rate">4.5/5</div>
-              <a href="listen.html" class="btn  btn-block mt-2"> Listen </a>
-              <a href="" class="btn btn-block"> Add to Favorite </a>
-            </div>
-          </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <article class="book">
+            <img src="Assets/book1.jpeg" alt="Book cover for [Book Title]" loading="lazy">
+            <h2>[Book Title]</h2>
+            <p>[Book Description]</p>
+            <a href="Listen.html" class="btn">Read More</a>
+          </article>
         </div>
       </div>
     </div>

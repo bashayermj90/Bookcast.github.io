@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>username</title>
+    <title>Your Listening History - Bookcast</title>
     <!--Google Font CDN-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,7 +72,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="settings.html">
                             <div class="icon">
                                 <i class="fa-solid fa-gear"></i>
                             </div>
@@ -104,59 +104,70 @@
         <!-- THE SIDEBAR ENDS HERE  -->
     </div>
 
+
+    <!-- Main Content -->
     <!-- THE  MAIN CONTENT HERE  -->
+
     <div class="container pt-5">
+
         <!--History Books-->
         <div class="row">
             <div class="col">
                 <h4>Books You've Listened To</h4>
-                <div class="row my-3">
-                    <div class="col-lg-3 col-md-4 col-ms-6 mb-3">
-                        <!-- Main content -->
-                        <div class="book-item">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img class="card-img-top" src="Assets/book1.jpg" style="height: 50%"
-                                        alt="book-cover">
-                                    <h5 class="book-title pt-2">Book Title 3</h5>
-                                    <p class="book-status">Not Started Yet</p>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 100%"
-                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div id="userHistory" class="user-historyrow my-3">
+                    <div id="historyContent" style="display: none;">
+                        <div class="col-lg-3 col-md-4 col-ms-6 mb-3">
+                            <!-- Main content -->
+                            <div class="book-item">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <img class="card-img-top" src="Assets/book1.jpg" style="height: 50%"
+                                            alt="book-cover">
+                                        <h5 class="book-title pt-2">Book Title 3</h5>
+                                        <p class="book-status">Not Started Yet</p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 100%"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="Listen.html">
+                                            <button class="btn p-0 my-1 w-100 pass-btn" id="resume">Resume</button>
+                                        </a>
+                                        <button class="btn btn-outline-danger p-0 my-1 w-100" data-book-id="book1"
+                                            id="remove">Remove Book</button>
                                     </div>
                                 </div>
-                                <div class="card-footer">
-                                    <a href="Listen.html">
-                                        <button class="btn p-0 my-1 w-100 pass-btn" id="resume">Resume</button>
-                                    </a>
-                                    <button class="btn btn-outline-danger p-0 my-1 w-100" data-book-id="book1"
-                                        id="remove">Remove Book</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-ms-6 mb-3">
+                            <div class="book-item">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <img class="card-img-top" src="Assets/book1.jpg" style="height: 50%"
+                                            alt="book-cover">
+                                        <h5 class="book-title pt-2">Book Title 2</h5>
+                                        <p class="book-status">In Progress - 20%</p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 20%"
+                                                aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="Listen.html">
+                                            <button class="btn p-0 my-1 w-100 pass-btn" id="resume">Resume</button>
+                                        </a>
+                                        <button class="btn btn-outline-danger p-0 my-1 w-100" data-book-id="book1"
+                                            id="remove">Remove Book</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-ms-6 mb-3">
-                        <div class="book-item">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img class="card-img-top" src="Assets/book1.jpg" style="height: 50%"
-                                        alt="book-cover">
-                                    <h5 class="book-title pt-2">Book Title 2</h5>
-                                    <p class="book-status">In Progress - 20%</p>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 20%"
-                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <a href="Listen.html">
-                                        <button class="btn p-0 my-1 w-100 pass-btn" id="resume">Resume</button>
-                                    </a>
-                                    <button class="btn btn-outline-danger p-0 my-1 w-100" data-book-id="book1"
-                                        id="remove">Remove Book</button>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Message for no records -->
+                    <div id="noRecordsMessageHis" style="display: none;" class="alert alert-info">
+                        <p>You don't have any books to resume yet. <a href="books.html">Check out the newest books
+                                we have!</a></p>
                     </div>
                 </div>
             </div>
@@ -165,8 +176,8 @@
         <div class="row">
             <div class="col">
                 <h4>Books You Liked</h4>
-                <div class="row my-3">
-                    <div class="col-lg-3 col-md-4 col-ms-6 mb-3">
+                <div id="userFavorite" class="user-likedRow my-3">
+                    <div id="favoriteContent" class="col-lg-3 col-md-4 col-ms-6 mb-3" style="display: none;">
                         <!-- Main content -->
                         <div class="book-item">
                             <div class="card">
@@ -185,6 +196,10 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div id="noRecordsMessageFav" style="display: none;" class="alert alert-info">
+                    <p>You don't have any favorite books to start. <a href="books.html">Check out the newest books
+                            we have!</a></p>
                 </div>
             </div>
         </div>
@@ -211,6 +226,27 @@
             button.closest('.book-item').remove();
         });
     });
+
+    // Assuming you have a way to get user listening history, this is just a simulation
+    let userListeningHistory = []; // Example: This would normally be fetched from your database
+
+    if (userListeningHistory.length === 0) {
+        document.getElementById('noRecordsMessageHis').style.display = 'block'; // Show message
+    } else {
+        document.getElementById('historyContent').style.display = 'block'; // Show history
+        // Logic to populate the historyContent with userListeningHistory data
+    }
+
+
+    // Assuming you have a way to get user listening favorite, this is just a simulation
+    let userListeningFavorite = []; // Example: This would normally be fetched from your database
+
+    if (userListeningFavorite.length === 0) {
+        document.getElementById('noRecordsMessageFav').style.display = 'block'; // Show message
+    } else {
+        document.getElementById('favoriteContent').style.display = 'block'; // Show history
+        // Logic to populate the historyContent with userListeningHistory data
+    }
 
 </script>
 </body>

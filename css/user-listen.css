@@ -11,10 +11,38 @@
   --white: #FFFFFF;
 }
 
-.card-footer{
-  background-color: var(--white);
+/* Styling for the progress container */
+.progress {
+    background-color: #e0e0e0; /* Background color of the progress bar */
+    border-radius: 5px; /* Rounded corners for the bar */
 }
 
+/* Styling for the progress bar itself */
+.progress-bar {
+    background-color: var(--background-color); /* Fill color of the progress bar */
+    border-radius: 5px; /* Rounded corners for the fill */
+    transition: width 0.4s ease; /* Smooth transition effect for the width change */
+}
+
+/* Optional: Add text inside the progress bar */
+.progress-bar::after {
+    content: attr(aria-valuenow) "%"; /* Display the current progress value */
+    color: white; /* Text color */
+    position: absolute; /* Positioning the text */
+    left: 50%; /* Centering the text */
+    transform: translateX(-50%); /* Centering the text */
+    font-weight: bold; /* Make the text bold */
+}
+.card {
+  border: 1px solid var(--background-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
 .card-footer .pass-btn{
   background-color: var(--white);
   border-color: var(--background-color);

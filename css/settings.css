@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+:root {
+  --heading-color: #242463;
+  /*For Headings*/
+  --background-color: #faaf40;
+  /*For backgrounds*/
+  --text-color: #ee4036;
+  /*For texts*/
+  --extra-color: #69678b;
+  /*Extra*/
+  --white: #FFFFFF;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    background-color: var(--background-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.push-notifications {
+    margin-top: 20px;
+}
